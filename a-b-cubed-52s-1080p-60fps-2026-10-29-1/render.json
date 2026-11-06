@@ -1,0 +1,150 @@
+{
+  "version": 2,
+  "scene": {
+    "repo": "tejaswigowda/blogtestvideo",
+    "file": "a-b-cubed_52s_1080p_60fps_2026-10-29 (1).mp4",
+    "branch": "main",
+    "commit": null,
+    "hash": "sha256:3988e749e1b24ccf4017e7a33dc5e6553dce1e30e80b98b86668dd3a01fb2de7"
+  },
+  "render": {
+    "mode": "offline",
+    "determinism": {
+      "frames": false,
+      "bytes": false,
+      "reasons": {
+        "frames": [
+          "the time-source audit did not pass",
+          "no per-frame hashes were made, so the claim cannot be checked",
+          "not verified: the shuffled-order test was not run (set Verify to all frames)"
+        ],
+        "bytes": [
+          "a hardware encoder was chosen: its bytes are not promised to repeat (a choice; the frames are unaffected)",
+          "the frames are not established as deterministic"
+        ]
+      },
+      "verification": null
+    },
+    "encoder": {
+      "kind": "hardware",
+      "name": "uploaded avc1 video (a-b-cubed_52s_1080p_60fps_2026-10-29 (1).mp4)",
+      "version": null,
+      "settings_hash": null,
+      "threads": null,
+      "config": null,
+      "stage": "master"
+    },
+    "renderer": "upload",
+    "device": "webcodecs",
+    "fps": 60,
+    "frames": 3072,
+    "frame_range": [
+      0,
+      3071
+    ],
+    "duration_s": 51.2,
+    "width": 1920,
+    "height": 1080,
+    "seed": null,
+    "exporter": "strata-export/1.2.0",
+    "rendered_at": "2026-11-06T04:47:58.170Z",
+    "time_source_audit": {
+      "document": "guides/TIME_SOURCES.md",
+      "passed": false,
+      "confirmed": [],
+      "live_when_present": []
+    }
+  },
+  "outputs": {
+    "master": "master.m3u8",
+    "renditions": [
+      {
+        "name": "720p60",
+        "width": 1280,
+        "height": 720,
+        "bitrate_kbps": 1800,
+        "playlist": "720p60/index.m3u8",
+        "segments": 9,
+        "max_segment_bytes": 1362582,
+        "encoder": {
+          "kind": "hardware",
+          "name": "WebCodecs VideoEncoder (H.264)",
+          "version": "Chromium 150",
+          "settings_hash": "sha256:be6f3801e9c1afe2b224592340abd5fdd648219b614b7caa704d8c3ee4c71241",
+          "threads": null,
+          "config": {
+            "codec": "avc1.640028",
+            "width": 1280,
+            "height": 720,
+            "bitrate": 1800000,
+            "framerate": 60,
+            "avc": {
+              "format": "avc"
+            },
+            "latencyMode": "quality",
+            "hardwareAcceleration": "no-preference",
+            "keyEvery": 120
+          },
+          "stage": "ladder",
+          "input": "master"
+        }
+      },
+      {
+        "name": "480p60",
+        "width": 854,
+        "height": 480,
+        "bitrate_kbps": 900,
+        "playlist": "480p60/index.m3u8",
+        "segments": 9,
+        "max_segment_bytes": 685240,
+        "encoder": {
+          "kind": "hardware",
+          "name": "WebCodecs VideoEncoder (H.264)",
+          "version": "Chromium 150",
+          "settings_hash": "sha256:fe0f3113856512c174441f41d8b5cd941a24e20f6168f7665dc8ece463b5544a",
+          "threads": null,
+          "config": {
+            "codec": "avc1.64001f",
+            "width": 854,
+            "height": 480,
+            "bitrate": 900000,
+            "framerate": 60,
+            "avc": {
+              "format": "avc"
+            },
+            "latencyMode": "quality",
+            "hardwareAcceleration": "no-preference",
+            "keyEvery": 120
+          },
+          "stage": "ladder",
+          "input": "master"
+        }
+      }
+    ],
+    "poster": "poster.jpg",
+    "captions": null,
+    "caption_tracks": [],
+    "manifest": {
+      "path": "files.sha256",
+      "algorithm": "sha256"
+    },
+    "audio": null,
+    "audio_present": false,
+    "audio_absence": "The uploaded video has no audio track. The master declares no audio group and no audio codec."
+  },
+  "checks": {
+    "segments_under_20mb": true,
+    "files_under_100mb": true,
+    "frame_count_matches_duration": true,
+    "encoder_recorded_per_rendition": true,
+    "master_matches_audio": true
+  },
+  "publication": {
+    "storage": "renders-repo",
+    "repo": "tejaswigowda/blogtestvideo",
+    "path": "a-b-cubed-52s-1080p-60fps-2026-10-29-1",
+    "tag": "a-b-cubed-52s-1080p-60fps-2026-10-29-1/v1",
+    "url": "https://cdn.jsdelivr.net/gh/tejaswigowda/blogtestvideo@a-b-cubed-52s-1080p-60fps-2026-10-29-1/v1/a-b-cubed-52s-1080p-60fps-2026-10-29-1/",
+    "size_bytes": 16441372
+  }
+}
